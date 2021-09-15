@@ -1,0 +1,179 @@
+body {
+    font-family: Almarai;
+}
+
+.bg-welcome {
+    background-image: url(../img/main.jpg);
+    height: 450px;
+}
+
+.bg-welcome .center {
+    padding-top: 8%;
+    width: 50%;
+    margin: auto;
+}
+
+.bg-welcome h1 {
+    text-align: center;
+    color: white;
+    font-family: fantasy;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 150px;
+    padding: 15px 20px 30px;
+    background-color: rgba(128, 140, 240, 0.5);
+    box-shadow: 1px 1px 2px 0 rgba(65, 65, 245, 0.8);
+}
+
+.section8 .nav {
+    display: block;
+    box-shadow: 0 2px 4px 0 rgba(13, 2, 110, 0.09);
+    margin-bottom: 30px;
+}
+
+.section8 .nav-link {
+    display: inline-block;
+}
+
+.section8 .nav-link {
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 0.5;
+    color: #030432;
+    padding: 15px 10px;
+}
+
+.section8 .nav .active {
+    opacity: 1;
+    border-bottom: 4px solid #115a88;
+}
+
+.section8 .tab-content #mycourses .row {
+    text-align: right;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px 0 rgba(13, 2, 110, 0.09);
+    background-color: #eee;
+    padding: 10px 0;
+}
+
+.section8 .tab-content #mycourses .row h3 {
+    color: #030432;
+    font-weight: bold;
+}
+
+.section8 .tab-content #mycourses .row img {
+    width: 100%;
+    height: 100%;
+}
+
+.section8 .tab-content #mycourses .row .progress {
+    width: 85%;
+    background-color: #fff;
+    float: right;
+    margin-top: 10px;
+}
+
+.section8 .tab-content #mycourses .row .bg-danger {
+    background-color: #115a88!important;
+}
+
+.section8 .tab-content #mycourses .row button {
+    background-color: #00b3b8;
+    padding: 13px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 110px;
+    height: 50px;
+    margin-top: -5px;
+    display: block;
+    border: none;
+    box-shadow: 0px 1px 0px #716a6a;
+}
+
+.section8 .tab-content #mycourses .row button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section8 .tab-content #avcourse .card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section8 .card .card-img-top {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+.section8 .card .card-body a {
+    font-weight: 600;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    color: #030432;
+    display: block;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.section8 .card .card-body a:hover {
+    background-color: #030432;
+    color: #00b3b8;
+    transition: 0.5s ease-in-out;
+}
+
+.section8 .card .card-body {
+    padding: 0px;
+    margin-bottom: -21px;
+}
+
+#avcourse h2, .result h2 {
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #030432;
+    padding-bottom: 5px;
+}
+
+#avcourse .colord, .result .colord {
+    border-bottom: 4px solid #115a88;
+    padding-bottom: 7px;
+}
+
+
+/* card carousal*/
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+/* display 3 */
+
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33.333%);
+    }
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
